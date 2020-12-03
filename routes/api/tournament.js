@@ -22,7 +22,6 @@ router.get("/", async (req, res, next) => {
       tournaments: tournaments,
     });
   } catch (error) {
-    console.log("^^^^^^^^^^^^^^");
     return res.status(500).json({
       msg: "Server error. Something went wrong...",
     });
