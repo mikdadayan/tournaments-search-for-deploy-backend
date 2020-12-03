@@ -19,9 +19,11 @@ const TournamentSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     // required: true,
     auto: true,
-  }
+  },
+  tournament_id: {
+    type: String,
+    required: true,
+  },
 });
-
-
 
 module.exports = Tournament = mongoose.model("tournament", TournamentSchema);
