@@ -7,7 +7,6 @@ const router = express.Router();
 // @desc    Get all Favorites
 router.get("/", async (req, res, next) => {
   const session = req.header("x-auth-token");
-  console.log(session);
   if (!session) {
     return res.status(401).json({
       msg: "there are no favorite tournaments",
