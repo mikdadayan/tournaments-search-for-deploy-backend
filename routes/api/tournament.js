@@ -31,7 +31,6 @@ router.get("/", async (req, res, next) => {
 // @desc    Add Favorite Route
 router.post("/favorites", async (req, res, next) => {
   try {
-    // console.log(req.body);
     if (!req.body) {
       return res.status(401).json({
         error: { msg: "Please fill all fields." },
@@ -39,7 +38,6 @@ router.post("/favorites", async (req, res, next) => {
     }
     let newTournament;
     if (req.body.user_id) {
-      console.log("&&&&&&&&&&&&&&&&&&&")
       let existingFavorites = await Tournament.find({
         tournament_id: req.body.tournament_id,
       });
