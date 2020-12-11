@@ -1,3 +1,3 @@
 {
-    "mongoURI" : "mongodb+srv://mik123:Zaq11qaZ@cluster0.bntkx.mongodb.net/tournament?retryWrites=true&w=majority"
+    "mongoURI" : "mongodb+srv://name:password@cluster0.bntkx.mongodb.net/tournament?retryWrites=true&w=majority"
 }
