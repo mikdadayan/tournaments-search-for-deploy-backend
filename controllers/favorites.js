@@ -38,14 +38,12 @@ exports.addFavoriteController = async (req, res, next) => {
       let existingFavorites = await Tournament.find({
         tournament_id: req.body.tournament_id,
       });
-      // console.log("*****************", existingFavorites);
 
       existingFavorites = existingFavorites.filter((favorite) => {
         return favorite.user_id.toString() === req.body.user_id.toString()
           ? favorite
           : null;
       });
-      // console.log("baaa");
       console.log("^^^^^^^^^^^^^^^^^", existingFavorites);
 
       // console.log(req.body.user_id);
