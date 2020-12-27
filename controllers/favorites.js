@@ -44,9 +44,7 @@ exports.addFavoriteController = async (req, res, next) => {
           ? favorite
           : null;
       });
-      console.log("^^^^^^^^^^^^^^^^^", existingFavorites);
 
-      // console.log(req.body.user_id);
       if (existingFavorites.length > 0) {
         return res.status(409).json({
           error: { msg: "You already added this tournament in favorites." },
