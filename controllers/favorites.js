@@ -1,4 +1,4 @@
-const Tournament = require("../../models/Tournament");
+const Tournament = require("../models/Tournament");
 
 // @route   Get api/tournaments
 // @desc    Get all Favorites
